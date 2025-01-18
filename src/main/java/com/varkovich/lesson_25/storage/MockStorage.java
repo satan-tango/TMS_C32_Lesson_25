@@ -2,7 +2,6 @@ package com.varkovich.lesson_25.storage;
 
 import com.varkovich.lesson_25.model.User;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 

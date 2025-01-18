@@ -26,7 +26,6 @@ public class LoginServlet extends HttpServlet {
         if (login != null && pass != null) {
             if (MockStorage.doesUserExist(pass, login)) {
                 HttpSession session = request.getSession();
-                String role = MockStorage.getRole(login, pass);
                 if (session.getAttribute("login") != null) {
                     if (session.getAttribute("login").equals(login)) {
                         writer.println("<h2>You are already authenticated</h2>");
@@ -37,7 +36,6 @@ public class LoginServlet extends HttpServlet {
                         session.setAttribute("role", MockStorage.getRole(login, pass));
                         writer.println("<h2>authentication was successful</h2>");
                     }
-                    ;
                 } else {
                     session.setAttribute("login", login);
                     session.setAttribute("role", MockStorage.getRole(login, pass));
