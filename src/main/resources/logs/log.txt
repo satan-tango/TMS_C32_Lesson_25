@@ -1,0 +1,2 @@
+[INFO] ->       18/01/2025 18:07:51 ->       User with login: 'user' has logged in.
+[INFO] ->       18/01/2025 18:08:23 ->       User with login: 'user' has logged in.
